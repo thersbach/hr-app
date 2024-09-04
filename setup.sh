@@ -25,5 +25,5 @@ cd frontend
 yarn install
 yarn start
 
-# Start symfony
+# go back to the root directory
 cd ..
