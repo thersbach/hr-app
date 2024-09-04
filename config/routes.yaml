@@ -1,0 +1,18 @@
+# microservice routes
+calculate:
+    path: /api/calculate
+    controller: App\Controller\CalculationController::calculate
+
+export:
+    path: /api/export
+    controller: App\Controller\ExportController::export
+
+react_frontend:
+    path: /{reactRouting}
+    defaults:
+        reactRouting: ''
+        # Verwijst naar het index.html bestand van je React build
+        _controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+        template: 'base.html.twig'
+    requirements:
+        reactRouting: .*

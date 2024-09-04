@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('frontend/build/static/css/main.css') }}" />
+    {% endblock %}
+</head>
+<body>
+<div id="root"></div>
+{% block javascripts %}
+    <script src="{{ asset('frontend/build/static/js/main.js') }}"></script>
+{% endblock %}
+</body>
+</html>
